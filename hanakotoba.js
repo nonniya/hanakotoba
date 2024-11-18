@@ -23,7 +23,7 @@ assessmentButton.addEventListener(
 
         const paragraph = document.createElement('p');
         paragraph.setAttribute('class', 'card-text');
-        const result = assessment(userNamed);
+        const result = assessment(userName);
         paragraph.innerText = result;
         bodyDivision.appendChild(paragraph);
 
