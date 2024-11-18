@@ -12,15 +12,14 @@ assessmentButton.addEventListener(
         }
         
         resultDivision.innerText = '';
-        const heading = document.createElement('h3');
-        heading.innerText = '診断結果';
-        resultDivision.appendChild(heading);
+        const hedding = document.createElement('h3');
+        hedding.innerText = '診断結果';
+        resultDivision.appendChild(hedding);
 
         const paragraph = document.createElement('p');
         const result = assessment(userName);
-        paragraph.innerText = result;
+        paragraph.innerText =result;
         resultDivision.appendChild(paragraph);
-
     }
 );
 
