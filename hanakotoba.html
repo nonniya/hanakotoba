@@ -16,8 +16,13 @@
     <div class="container pt-5">
         <h1>あなたにおすすめの花</h1>
         <p>あなたの名前を入れてください</p>
-        <input type="text" id="user-named" size="40" maxlength="20">
-        <button id="assessment">診断する</button>
+        <div class="col-sm-9 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control " id="user-name" size="40" maxlength="20">
+            <button class="btn btn-primary" id="assessment">診断する</button>
+          </div>
+        </div>
+      </div>
         <div id="result-area"></div>
     </div>
     <script src="hanakotoba.js"></script>
