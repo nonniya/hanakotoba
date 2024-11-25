@@ -38,19 +38,12 @@ const answers = [
     '###userName###におすすめの花はユリです。ユリの花言葉には「純粋」「無垢」「威厳」などがあります。'
 ];
 
-/**
- * 名前の文字列を渡すと診断結果を返す関数
- * @param {string} userName ユーザーの名前
- * @returns {string} 診断結果
- */
 function assessment(userName){
-    //全文字のコード番号を取得してそれを足し合わせる
     let sumOfCharCode = 0;
     for (let i =0; i < userName.length; i++){
         sumOfCharCode = sumOfCharCode + userName.charCodeAt(i);
     }
 
-    //文字のコード番号の合計を回答の数で割って添字の数値を求める
     const index = sumOfCharCode % answers.length;
     let result = answers[index];
 
